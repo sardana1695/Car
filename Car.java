@@ -2,40 +2,40 @@
  * This is a base class Car that has all the common car features. 
  * For example, all the cars have an engine, 4 wheels, steering wheel etc.
  */
-public class Car {
-	private int numberOfPounds = 5000;
-	private int numberOfSuperChargers = 0;
-	private int numberOfSensors = 0;
-	private int numberOfEngines = 0;
-	private int numberOfTrunks = 0;
-	private int numberOfWindows = 0;
-	private int numberOfWheels = 0;
-	private int numberOfSeats = 3;
+class Car {
+
+	protected int numberOfPounds = 5000;
+	protected int numberOfSuperChargers = 0;
+	protected int numberOfSensors = 0;
+	protected int numberOfEngines = 0;
+	protected int numberOfTrunks = 0;
+	protected int numberOfWindows = 0;
+	protected int numberOfWheels = 0;
+	protected int numberOfSeats = 3;
 	String company;
 	String type;
 	String Model;
-	float amountOfGas = 20.7f;
-	private int numberOfScreens = 0;
-	private int numberOfRows = 0;
-	private int numberOfTelevisions = 0;
-	private int numberOfCupHolders = 0;
-	private int numberOfHorsePower = 0;
+	protected int numberOfScreens = 0;
+	protected int numberOfRows = 0;
+	protected int numberOfTelevisions = 0;
+	protected int numberOfCupHolders = 0;
+	protected int numberOfHorsePower = 0;
 
 	public int getNumberOfWheels() {
-		System.out.println(numberOfWheels);
+		// System.out.println(numberOfWheels);
 		return numberOfWheels;
 	}
 
 	public int getNumberOfWindows() {
-		System.out.println(numberOfWindows);
+		// System.out.println(numberOfWindows);
 		return numberOfWindows;
 	}
 
 	public int getNumberOfSeats() {
-		System.out.println(numberOfSeats);
+		// System.out.println(numberOfSeats);
 		return numberOfSeats;
 	}
-	
+
 	public int getNumberOfPounds() {
 		return numberOfPounds;
 	}
@@ -127,11 +127,11 @@ public class Car {
 	public void setNumberOfSeats(int numberOfSeats) {
 		this.numberOfSeats = numberOfSeats;
 	}
-	
+
 	public static void main(String args[]) {
 
 		Car car1 = new Car();
-		car1.company = " Honda";
+		car1.company = "Honda";
 		car1.numberOfWheels = 4;
 		car1.type = "gas";
 
@@ -152,6 +152,14 @@ public class Car {
 		car3.Model = "model x";
 		car3.setNumberOfPounds(5000);
 
+		car3.getNumberOfSeats();
+		car3.getNumberOfpounds();
+		car3.getNumberOfSuperChargers();
+		car3.getNumberOfWindows();
+		car3.getNumberOfTrunks();
+		car3.getNumberOfSensors();
+		car3.getNumberOfScreens();
+
 		Gas car4 = new Gas();
 		car4.company = " BMW ";
 		car4.setNumberOfWheels(4);
@@ -165,19 +173,27 @@ public class Car {
 		car4.setNumberOfTelevisions(2);
 		car4.setNumberOfHorsePower(445);
 
-		System.out.println("Car one has " + car1.numberOfSeats);
-		System.out.println(" car two has " + car2.numberOfSeats);
-		System.out.println(" car three has " + car3.getNumberOfSeats());
+		car4.getNumberOfHorsePower();
+		car4.getNumberOfCupHolders();
+		car4.getNumberOfEngines();
+		car4.getNumberOfPounds();
+		car4.getNumberOfRows();
+		car4.getNumberOfSeats();
+		car4.getNumberOfTelevisions();
+		car4.getNumberOfTrunks();
+		car4.getNumberOfWindows();
 
+		System.out.println("Car one has " + car1.numberOfSeats);
 		System.out.println(car1.company + " is car one");
-		System.out.println(car1.company + " has " + car1.numberOfWheels + " number of wheels on the car");
 		System.out.println(car1.company + " car is " + car1.type);
 		System.out.println(car1.company + " has " + car2.numberOfSeats + " number of seats ");
 
+		System.out.println("Car two has " + car2.numberOfSeats);
 		System.out.println(car2.company + " has " + car2.numberOfSeats + " number of seats ");
 		System.out.println(car2.company + " has " + car2.numberOfWheels + " wheels on the car ");
 		System.out.println(car2.company + " is an " + car2.type + " car ");
 		System.out.println(car2.company + " is car two ");
+
 		System.out.println(car3.company + " is an electric car and its model is the model x ");
 
 	}

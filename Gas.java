@@ -4,44 +4,44 @@
  * Televisions, cup holders etc.
  */
 public class Gas extends Car {
-	Gas gasVar = new Gas();
+
 	@Override
 	public int getNumberOfSeats() {
-		System.out.println("I am a gas car with seats = " + gasVar.getNumberOfSeats());
-		return gasVar.getNumberOfSeats();
+		System.out.println("I am a gas car with seats = " + numberOfSeats);
+		return numberOfSeats;
 	}
 
 	public int getNumberOfWindows() {
-		System.out.println("I am an gas car with windows = " + gasVar.getNumberOfWindows());
-		return gasVar.getNumberOfWindows();
+		System.out.println("I am an gas car with windows = " + numberOfWindows);
+		return numberOfWindows;
 	}
 
 	public int getNumberOfTrunks() {
-		System.out.println("I am an gas car with trunks = " +gasVar.getNumberOfTrunks());
-		return gasVar.getNumberOfTrunks();
+		System.out.println("I am an gas car with trunks = " + numberOfTrunks);
+		return numberOfTrunks;
 	}
 	public int getNumberOfEngines() {
-		System.out.println("I am an gas car with Engines = " + gasVar.getNumberOfEngines());
-		return gasVar.getNumberOfEngines();
+		System.out.println("I am an gas car with Engines = " + numberOfEngines);
+		return numberOfEngines;
 	}
 
 	public int getNumberOfRows() {
-		System.out.println("I am an gas car with Rows = " + gasVar.getNumberOfRows());
-		return gasVar.getNumberOfRows();
+		System.out.println("I am an gas car with Rows = " + numberOfRows);
+		return numberOfRows;
 	}
 
 	public int getNumberOfTelevisions() {
-		System.out.println("I am an gas car with televisions = " + gasVar.getNumberOfTelevisions());
-		return gasVar.getNumberOfTelevisions();
+		System.out.println("I am an gas car with televisions = " + numberOfTelevisions);
+		return numberOfTelevisions;
 	}
 
 	public int getNumberOfCupHolders() {
-		System.out.println("I am an gas car with Cup Holders = " + gasVar.getNumberOfCupHolders());
-		return gasVar.getNumberOfCupHolders();
+		System.out.println("I am an gas car with Cup Holders = " + numberOfCupHolders);
+		return numberOfCupHolders;
 	}
 
 	public int getNumberOfHorsePower() {
-		System.out.println("I am an gas car with Horse Power = " + gasVar.getNumberOfHorsePower());
-		return gasVar.getNumberOfHorsePower();
+		System.out.println("I am an gas car with Horse Power = " + numberOfHorsePower);
+		return numberOfHorsePower;
 	}
 }

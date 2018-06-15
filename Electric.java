@@ -4,40 +4,40 @@
  * super chargers etc.
  */
 public class Electric extends Car {
-	Electric electricVar = new Electric();
+
 	@Override
 	public int getNumberOfSeats() {
-		System.out.println("I am an electric car with seats = " + electricVar.getNumberOfSeats());
-		return electricVar.getNumberOfSeats();
+		System.out.println("I am an electric car with seats = " + numberOfSeats);
+		return numberOfSeats;
 	}
 
 	public int getNumberOfWindows() {
-		System.out.println("I am an electric car with windows = " + electricVar.getNumberOfWindows());
-		return electricVar.getNumberOfWindows();
+		System.out.println("I am an electric car with windows = " + this.numberOfWindows);
+		return numberOfWindows;
 	}
 
 	public int getNumberOfTrunks() {
-		System.out.println("I am an electric car with trunks = " + electricVar.getNumberOfTrunks());
-		return electricVar.getNumberOfTrunks();
+		System.out.println("I am an electric car with trunks = " + numberOfTrunks);
+		return numberOfTrunks;
 	}
 
 	public int getNumberOfScreens() {
-		System.out.println("I am an electric car with Screens = " + electricVar.getNumberOfScreens());
-		return electricVar.getNumberOfScreens();
+		System.out.println("I am an electric car with Screens = " + numberOfScreens);
+		return numberOfScreens;
 	}
 
 	public int getNumberOfSuperChargers() {
-		System.out.println("I am an electric car with SuperChargers = " + electricVar.getNumberOfSuperChargers());
-		return electricVar.getNumberOfSuperChargers();
+		System.out.println("I am an electric car with SuperChargers = " + numberOfSuperChargers);
+		return numberOfSuperChargers;
 	}
 
 	public int getNumberOfSensors() {
-		System.out.println("I am an electric car with Sensors = " + electricVar.getNumberOfSensors());
-		return electricVar.getNumberOfSensors();
+		System.out.println("I am an electric car with Sensors = " + numberOfSensors);
+		return numberOfSensors;
 	}
 
 	public int getNumberOfpounds() {
-		System.out.println("I am an electric car with Pounds = " + electricVar.getNumberOfPounds());
-		return electricVar.getNumberOfPounds();
+		System.out.println("I am an electric car with Pounds = " + numberOfPounds);
+		return numberOfPounds;
 	}
 }
