@@ -2,8 +2,7 @@
  * This is a base class Car that has all the common car features. 
  * For example, all the cars have an engine, 4 wheels, steering wheel etc.
  */
-class Car {
-
+public class Car {
 	private int numberOfPounds = 5000;
 	private int numberOfSuperChargers = 0;
 	private int numberOfSensors = 0;
@@ -36,10 +35,7 @@ class Car {
 		System.out.println(numberOfSeats);
 		return numberOfSeats;
 	}
-
 	
-
-
 	public int getNumberOfPounds() {
 		return numberOfPounds;
 	}
